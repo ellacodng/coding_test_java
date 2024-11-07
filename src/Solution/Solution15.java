@@ -3,6 +3,7 @@ package Solution;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
+
 public class Solution15 {
     public int solution(int N, int K)
     {

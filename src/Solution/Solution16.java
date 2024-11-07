@@ -1,10 +1,23 @@
 package Solution;
 
+import javax.swing.*;
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Queue;
 
 public class Solution16 {
-    public int[] solution16(int[] progresses, int[] speeds) {
+
+    public static void main(String[] args) {
+        int [] progresses1 = {93, 30, 55};
+        int [] speeds1 = {1, 30, 5};
+
+        int [] progresses2 = {90, 95, 39, 59, 99, 87};
+        int [] speeds2 = {2, 1, 20, 10, 1, 9};
+
+        System.out.println(Arrays.toString(solution16(progresses1, speeds1)));
+        System.out.println(Arrays.toString(solution16(progresses2, speeds2)));
+    }
+    public static int[] solution16(int[] progresses, int[] speeds) {
         Queue<Integer> progressesQueue = new ArrayDeque<>();
         Queue<Integer> speedsQueue = new ArrayDeque<>();
 
